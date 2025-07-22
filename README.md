@@ -38,7 +38,7 @@ This project builds an end-to-end machine learning pipeline to predict the risk 
 - Display risk probability
 
 ✅ **Step 8: Deployment**
-- Used Ngrok to deploy and generate public link
+- Used Streamlit with Girhub to deploy and generate public link
 
 ---
 
@@ -61,7 +61,7 @@ streamlit run app.py
 ---
 ## 🌍 **Demo**
 If running, the app will be live here:  
-`https://xxxx-xxxx-xxxx.ngrok.io`
+`https://ahmedkamal14-heart-disease-prediction-project-uiapp-ozhnpc.streamlit.app/`
 
 ---
 
