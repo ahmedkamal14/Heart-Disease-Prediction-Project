@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
-model = joblib.load('../models/best_model.pkl')
+model = joblib.load('models/best_model.pkl')
 
 st.title("💓 Heart Disease Prediction App")
 
@@ -34,7 +34,7 @@ thal = {'Normal': 3, 'Fixed Defect': 6, 'Reversible Defect': 7}[thal]
 
 input_data = np.array([age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]).reshape(1, -1)
 
-scaler = joblib.load('../models/scaler.pkl')
+scaler = joblib.load('models/scaler.pkl')
 input_data_scaled = scaler.transform(input_data)
 
 if st.button("Predict"):
